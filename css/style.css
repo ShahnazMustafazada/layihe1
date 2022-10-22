@@ -148,6 +148,11 @@ footer {
   height: 390px;
   background: #000000;
   display: flex;
+  flex-direction: column;
+}
+
+.footercontent {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -163,14 +168,23 @@ footer {
 }
 
 .social {
-  max-width: 198px;
+  width: 198px;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  top: 1720px;
+  left: 122px;
+}
+
+.social img {
+  width: 34px;
+  height: 34px;
 }
 
 .end {
   color: white;
-  margin-top: 145px;
+  margin-top: 200px;
+  margin-left: 122px;
 }
 
 .end p {
@@ -217,12 +231,10 @@ footer {
 /* ! TABLET */
 
 @media screen and (max-width: 1279px) and (min-width: 992px) {
-
   .kurs {
     height: 451.75px;
     background-color: #efefef;
   }
-
 
   .kurs > .title_text {
     font-family: "Roboto Slab", serif;
@@ -237,7 +249,6 @@ footer {
   .block_content {
     width: 458.12px;
     height: 261.2px;
-    border-radius: 30px;
     box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
     border-radius: 17.375px;
     margin-left: 70.66px;
@@ -293,7 +304,6 @@ footer {
 
   .september {
     height: 451.75px;
-
   }
 
   .sec2-title {
@@ -313,7 +323,7 @@ footer {
     font-size: 14px;
     line-height: 14.19px;
   }
-  
+
   .text1 p:last-child {
     font-size: 46px;
     line-height: 46.64px;
@@ -322,75 +332,79 @@ footer {
   .text2 {
     margin-left: 70px;
   }
-  
+
   .left-text,
   .right-text {
     max-width: 170.28px;
     margin-right: 40.54px;
     font-weight: 400;
   }
-  
+
   .left-text p:nth-child(1) {
     font-size: 14px;
     line-height: 14.19px;
     margin-bottom: 16px;
   }
-  
+
   .left-text p:last-child {
     font-size: 10px;
     line-height: 10.14px;
   }
-  
+
   .right-text p:nth-child(1) {
     font-size: 14px;
     line-height: 14.19px;
     margin-bottom: 16px;
   }
-  
+
   .right-text p:last-child {
     font-size: 10px;
     line-height: 10.14px;
   }
-  
+
   footer {
     height: 225.88px;
   }
-  
+
   .left {
     padding-left: 70.76px;
     padding-top: 28.96px;
   }
 
-  .logo{
+  .logo {
     margin: 0;
   }
-  
+
   .logo img {
     width: 66.6px;
     height: 39.38px;
     margin-bottom: 17px;
   }
-  
+
   .social {
-    max-width: 115px;
+    width: 115px;
+    position: absolute;
+    top: 1000px;
+    left: 70.76px;
   }
 
-  .social img{
+  .social img {
     width: 18px;
     height: 18px;
   }
-  
+
   .end {
     color: white;
     margin-top: 80px;
+    margin-left: 70px;
   }
-  
+
   .end p {
     font-weight: 400;
     font-size: 10px;
     line-height: 10.14px;
   }
-  
+
   .right {
     margin-right: 146px;
     margin-top: 54px;
@@ -399,26 +413,245 @@ footer {
     font-style: normal;
     font-weight: 400;
   }
-  
-  
+
   .contact img {
     margin-right: 12px;
   }
-  
+
   .contact .tel {
     width: 16px;
     height: 16px;
   }
-  
+
   .contact .mail {
     width: 16px;
     height: 11px;
   }
-  
+
   .contact p {
     font-size: 14px;
     margin-bottom: 10px;
   }
-  
+}
 
+/* !  TELEFON */
+
+@media screen and (max-width: 991px) {
+  .kurs {
+    height: 423px;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kurs > .title_text {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26.36px;
+    padding-top: 42px;
+    padding-left: 36px;
+  }
+
+  .block_content {
+    margin: 25px 0 0 0;
+    width: 308px;
+    height: 248px;
+    box-shadow: 0.465972px 0.465972px 9.31944px rgba(0, 0, 0, 0.25);
+    border-radius: 13.9792px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block_text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    padding-top: 23.17px;
+    padding-left: 26.06px;
+    padding-right: 26.64px;
+    margin: 0;
+  }
+
+  .profile {
+    display: flex;
+    height: 84px;
+  }
+
+  .profile > .img {
+    width: 80px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 10px 16px 16px;
+  }
+
+  .img > img {
+    width: 80px;
+    height: 84px;
+  }
+
+  .profile_name {
+    margin-top: 30px;
+  }
+
+  .profile_name p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14.19px;
+    height: 32.73px;
+  }
+
+  .profile_name > .icon-fb {
+    margin: 0;
+    width: 14.91px;
+    height: 17.2px;
+  }
+
+  .september {
+    height: 363.46px;
+  }
+
+  .sec2-title {
+    font-size: 26px;
+    line-height: 26.36px;
+    padding-top: 62px;
+    padding-left: 36px;
+  }
+
+  .text1 {
+    margin-top: 22.33px;
+    margin-left: 36px;
+    margin-bottom: 30px;
+  }
+
+  .text1 p:nth-child(1) {
+    font-size: 12px;
+    line-height: 12.17px;
+  }
+
+  .text1 p:last-child {
+    font-size: 37px;
+    line-height: 37.51px;
+  }
+
+  .text2 {
+    margin-left: 36px;
+  }
+
+  .left-text,
+  .right-text {
+    max-width: 137px;
+    margin-right: 31px;
+    font-weight: 400;
+  }
+
+  .left-text p:nth-child(1) {
+    font-size: 12px;
+    line-height: 12.17px;
+    margin-bottom: 6px;
+  }
+
+  .left-text p:last-child {
+    font-size: 10px;
+    line-height: 10.14px;
+  }
+
+  .right-text p:nth-child(1) {
+    font-size: 12px;
+    line-height: 12.17px;
+    margin-bottom: 6px;
+  }
+
+  .right-text p:last-child {
+    font-size: 10px;
+    line-height: 10.14px;
+  }
+
+  footer {
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 36px;
+
+  }
+
+  .footercontent{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    padding-left: 0px;
+    padding-top: 23px;
+  }
+
+  .logo {
+    margin: 0;
+    width: 53.59px;
+    height: 31.69px;
+  }
+
+  .logo img {
+    width: 53.59px;
+    height: 31.69px;
+    margin-bottom: 17px;
+  }
+
+  .social {
+    max-width: 91px;
+    margin-top: 20px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .social img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .end {
+    color: white;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .end p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10.14px;
+  }
+
+  .right {
+    margin-right: 146px;
+    margin-top: 54px;
+    color: white;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .contact img {
+    margin-right: 12px;
+  }
+
+  .contact .tel {
+    width: 12px;
+    height: 12px;
+  }
+
+  .contact .mail {
+    width: 12px;
+    height: 8px;
+  }
+
+  .contact p {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
 }
